@@ -1,8 +1,8 @@
 return {
-    'ellisonleao/gruvbox.nvim',
+    'pbrisbin/vim-colors-off',
     priority = 1000,
     config = function()
         vim.o.background = 'dark'
-        vim.cmd[[colo gruvbox]]
+        vim.cmd[[colo off]]
     end,
 }
