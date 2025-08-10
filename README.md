@@ -1,3 +1,3 @@
 # neovim config
 
-minimal n comfortable
+super minimal

@@ -1,8 +1,8 @@
 return {
-    'pbrisbin/vim-colors-off',
+    'ajmwagar/vim-deus',
     priority = 1000,
     config = function()
         vim.o.background = 'dark'
-        vim.cmd[[colo off]]
+        vim.cmd[[colo deus]]
     end,
 }
