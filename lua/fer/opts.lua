@@ -11,3 +11,6 @@ vim.opt.expandtab = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+
+vim.opt.syntax = "off"
+vim.cmd[[colo quiet]]

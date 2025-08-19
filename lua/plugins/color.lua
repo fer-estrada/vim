@@ -1,11 +1,4 @@
-return {
-    'AlessandroYorba/Alduin',
-    priority = 1000,
-    config = function()
-        vim.o.background = 'dark'
-        vim.cmd[[colo alduin]]
-    end,
-}
+return {}
 
 -- ajmwagar/vim-deus
 -- ellisonleao/gruvbox.nvim
