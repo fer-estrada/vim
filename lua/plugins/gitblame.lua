@@ -8,8 +8,8 @@ return {
         schedule_event = CursorHold,
         clear_event = CursorHoldI,
         delay = 500,
-        message_when_not_committed = 'commit dis NOW !',
-        max_commit_summary_length = 30,
+        message_when_not_committed = '',
+        max_commit_summary_length = 50,
         virtual_text_column = 80,
     },
 }
