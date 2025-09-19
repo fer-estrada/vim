@@ -1,4 +1,4 @@
-vim.lsp.enable({'lua_ls', 'clangd'})
+vim.lsp.enable({'lua_ls', 'clangd', 'marksman'})
 
 vim.diagnostic.config({
     virtual_text = true,
