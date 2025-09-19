@@ -1,17 +1,21 @@
-vim.opt.guicursor = ""
+local opt = vim.o
+local cmd = vim.cmd
+--this so the warnings are only up here
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
-vim.opt.cursorline = true
+opt.guicursor = ""
 
-vim.o.signcolumn = 'yes'
+opt.nu = true
+opt.relativenumber = true
+opt.cursorline = true
 
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.expandtab = true
+opt.signcolumn = 'yes'
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+opt.shiftwidth = 4
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.expandtab = true
 
-vim.cmd(":hi statusline guifg=white guibg=NONE")
+opt.hlsearch = false
+opt.incsearch = true
+
+cmd(":hi statusline guifg=white guibg=NONE")
