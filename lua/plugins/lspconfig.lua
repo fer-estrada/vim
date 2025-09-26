@@ -1,9 +1,12 @@
+local enable = vim.lsp.enable
+local diagnostic = vim.diagnostic.config
+
 return {
     'neovim/nvim-lspconfig',
     config = function()
-        vim.lsp.enable({'lua_ls', 'clangd', 'marksman', 'pyright'})
+        enable({'lua_ls', 'clangd', 'marksman', 'pyright'})
 
-        vim.diagnostic.config({
+        diagnostic({
             virtual_text = true,
             underline = true,
             update_in_insert = false,
