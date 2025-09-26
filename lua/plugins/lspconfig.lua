@@ -1,17 +1,7 @@
 return {
     'neovim/nvim-lspconfig',
     config = function()
-        vim.lsp.enable({'lua_ls', 'clangd', 'marksman', 'python-lsp-server'})
-
-        vim.lsp.config('python-lsp-server', {
-            settings = {
-                pylsp = {
-                    plugins = {
-                        pylint = { enabled = true, executable = 'pylint' },
-                    },
-                },
-            },
-        })
+        vim.lsp.enable({'lua_ls', 'clangd', 'marksman', 'pyright'})
 
         vim.diagnostic.config({
             virtual_text = true,
