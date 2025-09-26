@@ -18,7 +18,6 @@ autocmd("FileType", {
 
 require('fer.opts')
 require('fer.remap')
-require('fer.lsp')
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
