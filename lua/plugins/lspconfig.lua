@@ -1,10 +1,15 @@
 local enable = vim.lsp.enable
+local config = vim.lsp.config
 local diagnostic = vim.diagnostic.config
 
 return {
     'neovim/nvim-lspconfig',
     config = function()
         enable({'lua_ls', 'clangd', 'marksman', 'pyright'})
+
+        config('lua_ls', {
+            settings = { Lua = { diagnostics = { globals = { 'vim' } } } }
+        })
 
         diagnostic({
             virtual_text = true,
