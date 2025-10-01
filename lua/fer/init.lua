@@ -1,6 +1,5 @@
 local g = vim.g
 local api = vim.api
-local opt = vim.opt
 
 g.mapleader = ' '
 g.maplocalleader = ' '
@@ -13,10 +12,7 @@ local autocmd = api.nvim_create_autocmd
 autocmd("FileType", {
     group = 'fer_or',
     callback = function()
-        opt.shiftwidth = 4
-        opt.tabstop = 4
-        opt.softtabstop = 4
-        opt.expandtab = true
+        require('fer.opts')
     end
 })
 
