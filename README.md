@@ -12,7 +12,7 @@ super minimal, comfy, and straightforward
 │   │   ├── init.lua         # entry points, autocmds, etc
 │   │   ├── remaps.lua       # keymaps
 │   │   ├── opts.lua         # vim options
-│   │   └── lazy_init.lua         # lazy setup
+│   │   └── lazy_init.lua    # lazy setup
 │   └── plugins/
 │       └── plugins duh...
 ```
