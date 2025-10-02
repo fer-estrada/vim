@@ -4,6 +4,7 @@ super minimal, comfy, and straightforward
 
 ## structure
 
+```
 ~/.config/nvim/
 ├── init.lua
 ├── lua/
@@ -14,6 +15,7 @@ super minimal, comfy, and straightforward
 │   │   └── lazy_init.lua         # lazy setup
 │   └── plugins/
 │       └── plugins duh...
+```
 
 ## usage
  ### prerequesites
