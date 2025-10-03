@@ -1,6 +1,5 @@
 local opt = vim.o
 local cmd = vim.cmd
---this so the warnings are only up here
 
 opt.guicursor = ""
 

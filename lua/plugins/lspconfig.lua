@@ -8,7 +8,7 @@ return {
         enable({'lua_ls', 'clangd', 'marksman', 'pyright'})
 
         config('lua_ls', {
-            settings = { Lua = { diagnostics = { globals = { 'vim' } } } }
+            settings = { Lua = { diagnostics = { globals = { 'vim', 'CursorHold', 'CursorHoldI' } } } }
         })
 
         diagnostic({

@@ -1,6 +1,5 @@
 local key = vim.keymap.set
 local cmd = vim.cmd
---this so the warnings are only up here
 
 key("n", "<leader>pv", cmd.Ex)
 key("n", "<C-s>", "<cmd>w<CR>")
