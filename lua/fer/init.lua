@@ -1,5 +1,7 @@
 local g = vim.g
 local api = vim.api
+local cmd = vim.cmd
+local autocmd = api.nvim_create_autocmd
 
 g.mapleader = ' '
 g.maplocalleader = ' '
@@ -7,13 +9,20 @@ g.maplocalleader = ' '
 require('fer.lazy_init')
 
 api.nvim_create_augroup('fer_or', { clear = true })
-local autocmd = api.nvim_create_autocmd
 
 autocmd("FileType", {
     group = 'fer_or',
     callback = function()
         require('fer.opts')
     end
+})
+
+autocmd({ "ColorScheme", "User" }, {
+    pattern = { "*", "LazyRender" },
+    group = 'fer_or',
+    callback = function()
+        cmd(":hi statusline guifg=white guibg=NONE")
+    end,
 })
 
 require('fer.opts')
