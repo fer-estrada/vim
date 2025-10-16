@@ -2,13 +2,14 @@ local g = vim.g
 local api = vim.api
 local cmd = vim.cmd
 local autocmd = api.nvim_create_autocmd
+local augroup = api.nvim_create_augroup
 
 g.mapleader = ' '
 g.maplocalleader = ' '
 
 require('fer.lazy_init')
 
-api.nvim_create_augroup('fer_or', { clear = true })
+augroup('fer_or', { clear = true })
 
 autocmd("FileType", {
     group = 'fer_or',

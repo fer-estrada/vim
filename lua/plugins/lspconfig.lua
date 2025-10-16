@@ -5,7 +5,7 @@ local diagnostic = vim.diagnostic.config
 return {
     'neovim/nvim-lspconfig',
     config = function()
-        enable({'lua_ls', 'clangd', 'marksman', 'pyright'})
+        enable({'lua_ls', 'clangd', 'marksman', 'pyright', 'astro', 'ts_ls'})
 
         config('lua_ls', {
             settings = { Lua = { diagnostics = { globals = { 'vim', 'CursorHold', 'CursorHoldI' } } } }
