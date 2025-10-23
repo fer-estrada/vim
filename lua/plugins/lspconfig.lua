@@ -5,10 +5,20 @@ local diagnostic = vim.diagnostic.config
 return {
     'neovim/nvim-lspconfig',
     config = function()
-        enable({'lua_ls', 'clangd', 'marksman', 'pyright', 'astro', 'ts_ls'})
+        enable({'lua_ls', 'clangd', 'arduino-language-server', 'rust_analyzer', 'marksman', 'pyright', 'astro', 'ts_ls'})
 
         config('lua_ls', {
             settings = { Lua = { diagnostics = { globals = { 'vim', 'CursorHold', 'CursorHoldI' } } } }
+        })
+
+        config('rust_analyzer', {
+            filetypes = { 'rs' },
+            settings = {
+                ['rust-analyzer'] = {
+                    cargo = { allFeatures = true },
+                    checkOnSave = { command = 'clippy' },
+                },
+            },
         })
 
         diagnostic({
