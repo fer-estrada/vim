@@ -1,5 +1,4 @@
 vim.cmd('colo quiet')
-
 return {
 }
 
