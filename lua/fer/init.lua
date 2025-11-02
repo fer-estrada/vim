@@ -28,6 +28,7 @@ autocmd({ "ColorScheme", "User" }, {
 
 require('fer.opts')
 require('fer.remap')
+require('fer.lsp')
 
 g.netrw_browse_split = 0
 g.netrw_banner = 0
