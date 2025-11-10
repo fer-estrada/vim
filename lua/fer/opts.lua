@@ -17,4 +17,5 @@ opt.expandtab = true
 opt.hlsearch = false
 opt.incsearch = true
 
+cmd(":colo quiet")
 cmd(":hi statusline guifg=white guibg=NONE")

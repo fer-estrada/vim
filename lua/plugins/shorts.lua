@@ -29,5 +29,11 @@ return {
             vim.keymap.set('n', '[;', dropbar_api.goto_context_start)
             vim.keymap.set('n', '];', dropbar_api.select_next_context)
         end
-    }
+    },
+    {
+        'nacro90/numb.nvim',
+        config = function()
+            require('numb').setup()
+        end,
+    },
 }
