@@ -1,7 +1,6 @@
 local key = vim.keymap.set
-local cmd = vim.cmd
 
-key("n", "<leader>pv", cmd.Ex)
+key("n", "<leader>pv", vim.cmd.Ex)
 key("n", "<C-s>", "<cmd>w<CR>")
 key("n", "<leader>Q", "<cmd>q<CR>")
 
