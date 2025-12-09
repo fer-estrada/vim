@@ -22,7 +22,7 @@ autocmd({ "ColorScheme", "User" }, {
     pattern = { "*", "LazyRender" },
     group = 'fer_or',
     callback = function()
-        cmd(":hi statusline guifg=white guibg=NONE")
+        cmd(":hi statusline guifg=black guibg=NONE")
     end,
 })
 
