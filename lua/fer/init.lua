@@ -11,22 +11,16 @@ require('fer.lazy_init')
 
 augroup('fer_or', { clear = true })
 
-autocmd("FileType", {
-    group = 'fer_or',
+autocmd("ColorScheme", {
     callback = function()
-        require('fer.opts')
-    end
-})
-
-autocmd({ "ColorScheme", "User" }, {
-    pattern = { "*", "LazyRender" },
-    group = 'fer_or',
-    callback = function()
-        cmd(":hi statusline guifg=black guibg=NONE")
+        package.loaded['fer.highlights'] = nil
+        require('fer.highlights')
     end,
 })
 
 require('fer.opts')
+cmd(':colo quiet')
+require('fer.highlights')
 require('fer.remap')
 require('fer.lsp')
 
