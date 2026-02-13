@@ -4,7 +4,7 @@ return {
     lazy = false,
     build = ':TSUpdate',
     opts = {
-        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "rust" },
+        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "rust", "java" },
         auto_install = true,
         highlight = {
             enable = false,
