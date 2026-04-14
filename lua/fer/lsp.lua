@@ -1,4 +1,4 @@
-vim.lsp.enable({ 'luals', 'clangd', 'asm-lsp', 'rust_analyzer', 'vls', 'jdtls' })
+vim.lsp.enable({ 'luals', 'clangd', 'asm-lsp', 'rust_analyzer', 'vls' })
 
 vim.diagnostic.config({
     virtual_text = true,
