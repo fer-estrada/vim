@@ -10,6 +10,6 @@ return {
         delay = 500,
         message_when_not_committed = 'commit this, please',
         max_commit_summary_length = 50,
-        virtual_text_column = 80,
+        virtual_text_column = 115,
     },
 }
