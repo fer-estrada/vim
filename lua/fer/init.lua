@@ -21,6 +21,10 @@ autocmd("ColorScheme", {
 })
 
 cmd(":hi statusline guifg=white guibg=NONE")
+
+vim.api.nvim_set_hl(0, "@lsp.type.comment", { link = "Normal" })
+vim.api.nvim_set_hl(0, "@lsp.type.comment.cpp", { link = "Normal" })
+
 require('fer.remap')
 require('fer.lsp')
 
