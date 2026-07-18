@@ -18,7 +18,7 @@ opt.expandtab = true
 opt.hlsearch = false
 opt.incsearch = true
 
-cmd(':colo quiet')
+cmd(':colo default')
 set_hl(0, "Normal", { bg = "none" })
 set_hl(0, "NormalFloat", { bg = "none" })
 set_hl(0, "NormalNC", { bg = "none" })
