@@ -3,12 +3,12 @@ return {
     config = function()
         require('cloak').setup({
             enabled = true,
-            cloak_character = 'e',
+            cloak_character = '$',
             cloak_length = 8,
             cloak_telescope = true,
             patterns = {
                 {
-                    file_pattern = '.env*',
+                    file_pattern = '*.env',
                     cloak_pattern = '=.*',
                     replace = nil,
                 },
