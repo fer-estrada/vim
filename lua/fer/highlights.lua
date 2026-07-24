@@ -30,10 +30,11 @@ local function mono()
 
     set_hl(0, 'CursorLine', { bg = '#444444' })
     set_hl(0, 'CursorLineNr', { fg = '#ffffff', bg = '#444444', bold = false })
-
     set_hl(0, 'Visual', { bg = '#ffffff', fg = '#444444' })
     set_hl(0, 'Search', { bg = '#ffffff', fg = '#444444' })
     set_hl(0, 'IncSearch', { bg = '#ffffff', fg = '#444444' })
+    set_hl(0, 'HoverNormal', { fg = "#000000", bg = "#ffffff" })
+    set_hl(0, 'HoverBorder', { fg = "#000000", bg = "#ffffff" })
 end
 
 autocmd({ 'ColorScheme', 'VimEnter', 'LspAttach' }, { callback = mono })
