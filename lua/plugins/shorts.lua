@@ -28,4 +28,9 @@ return {
             vim.keymap.set('n', '<leader>ut', vim.cmd.UndotreeToggle)
         end,
     },
+    {
+        'kawre/neotab.nvim',
+        event = 'InsertEnter',
+        opts = {},
+    },
 }
