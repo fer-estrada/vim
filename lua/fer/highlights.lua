@@ -2,6 +2,13 @@ local cmd = vim.cmd
 local autocmd = vim.api.nvim_create_autocmd
 local set_hl = vim.api.nvim_set_hl
 
+cmd(':colo default')
+set_hl(0, "Normal", { bg = "none" })
+set_hl(0, "NormalFloat", { bg = "none" })
+set_hl(0, "NormalNC", { bg = "none" })
+set_hl(0, "SignColumn", { bg = "none" })
+set_hl(0, "EndOfBuffer", { bg = "none" })
+
 autocmd("ColorScheme", {
     pattern = "*",
     callback = function()

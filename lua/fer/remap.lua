@@ -4,10 +4,12 @@ key("n", "<leader>pv", vim.cmd.Ex)
 key("n", "<C-s>", "<cmd>w<CR>")
 key("n", "<leader>Q", "<cmd>q<CR>")
 
-key("v", "Y", [["+y]])
+key({ "n", "v" }, "Y", [["+y]])
 
 key("v", "J", ":m '>+1<CR>gv=gv")
 key("v", "K", ":m '<-2<CR>gv=gv")
 
 key("n", "n", "nzzzv")
-key("n", "N", "Nzzv")
+key("n", "N", "Nzzzv")
+key("n", "<C-d>", "<C-d>zz")
+key("n", "<C-u>", "<C-u>zz")
