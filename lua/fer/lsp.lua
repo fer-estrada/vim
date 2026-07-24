@@ -19,17 +19,9 @@ vim.diagnostic.config({
     underline = false,
     virtual_text = true,
     virtual_lines = false,
-    signs = {
-        text = {
-            [vim.diagnostic.severity.ERROR] = '●',
-            [vim.diagnostic.severity.WARN]  = '●',
-            [vim.diagnostic.severity.INFO]  = '●',
-            [vim.diagnostic.severity.HINT]  = '●',
-        },
-    },
     float = {
         border = 'rounded',
         source = true,
     },
-    severity_sort = false,
+    severity_sort = true,
 })
