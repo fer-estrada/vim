@@ -1,5 +1,3 @@
-vim.lsp.enable({ 'luals', 'clangd', 'asm-lsp', 'rust_analyzer', 'vls', 'ts_ls' })
-
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(e)
         local opts = { buffer = e.buf }
@@ -25,3 +23,7 @@ vim.diagnostic.config({
     },
     severity_sort = true,
 })
+
+vim.lsp.config("*", { capabilities = require("blink.cmp").get_lsp_capabilities() })
+
+vim.lsp.enable({ 'luals', 'clangd', 'asm-lsp', 'rust_analyzer', 'vls', 'ts_ls' })
