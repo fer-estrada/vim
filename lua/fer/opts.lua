@@ -18,3 +18,6 @@ opt.expandtab = true
 
 opt.hlsearch = false
 opt.incsearch = true
+
+opt.cmdheight = 0
+opt.laststatus = 3
