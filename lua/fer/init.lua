@@ -3,7 +3,6 @@ vim.g.maplocalleader = ' '
 
 require('fer.lazy_init')
 require('fer.opts')
-require('fer.color')
 require('fer.remap')
 require('fer.lsp')
 
