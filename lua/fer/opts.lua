@@ -1,23 +1,21 @@
-local opt = vim.o
+vim.o.guicursor = ""
 
-opt.guicursor = ""
+vim.o.nu = true
+vim.o.relativenumber = true
+vim.o.cursorline = true
 
-opt.nu = true
-opt.relativenumber = true
-opt.cursorline = true
+vim.o.signcolumn = 'yes'
 
-opt.signcolumn = 'yes'
+vim.o.smartindent = true;
+vim.o.autoindent = true;
 
-opt.smartindent = true;
-opt.autoindent = true;
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.expandtab = true
 
-opt.shiftwidth = 4
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.expandtab = true
+vim.o.hlsearch = false
+vim.o.incsearch = true
 
-opt.hlsearch = false
-opt.incsearch = true
-
-opt.cmdheight = 0
-opt.laststatus = 3
+vim.o.cmdheight = 0
+vim.o.laststatus = 3
