@@ -4,7 +4,7 @@ vim.o.nu = true
 vim.o.relativenumber = true
 vim.o.cursorline = true
 
-vim.o.signcolumn = 'yes'
+vim.o.signcolumn = "yes"
 
 vim.o.smartindent = true
 vim.o.autoindent = true
