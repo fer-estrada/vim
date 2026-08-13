@@ -1,22 +1,3 @@
-# neovim config
-
-super minimal, comfy, and straightforward
-
-## structure
-
-```
-~/.config/nvim/
-├── init.lua
-├── lua/
-│   ├── fer/
-│   │   ├── init.lua         # entry points, autocmds, etc
-│   │   ├── remaps.lua       # keymaps
-│   │   ├── opts.lua         # vim options
-│   │   └── lazy_init.lua    # lazy setup
-│   └── plugins/
-│       └── plugins duh...
-```
-
 ## usage
  ### prerequesites
  - neovim >= 0.9.0 (i just use latest)
