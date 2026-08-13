@@ -3,6 +3,8 @@ vim.keymap.set("n", "<leader>Q", vim.cmd.q)
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+vim.keymap.set({ "n", "v" }, "Y", [["+y]])
+
 -- nvim config keybinds
 vim.keymap.set("n", "<leader><leader>s", vim.cmd.source)
 vim.keymap.set("n", "<leader><leader>r", vim.cmd.restart)
