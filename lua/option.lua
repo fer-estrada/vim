@@ -19,3 +19,13 @@ vim.o.incsearch = true
 
 vim.o.cmdheight = 0
 vim.o.laststatus = 3
+
+vim.scriptencoding = "utf-8"
+vim.o.encoding = "utf-8"
+vim.fileencoding = "utf-8"
+
+vim.o.scrolloff = 10
+
+vim.o.splitright = true
+vim.o.splitbelow = true
+vim.o.splitkeep = "cursor"
