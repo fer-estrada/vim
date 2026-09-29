@@ -1,3 +1,5 @@
+vim.lsp.enable({ "lua_ls", "clangd", "asm_lsp", "ts_ls", "rust_analyzer", "gopls", "vls" })
+
 vim.diagnostic.config({
     virtual_text = true,
 })
@@ -12,5 +14,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 vim.cmd("set completeopt+=noselect")
-
-vim.lsp.enable({ "lua_ls", "clangd", "asm_lsp", "ts_ls", "rust_analyzer", "gopls", "vls" })

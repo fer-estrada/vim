@@ -1,31 +1,34 @@
-vim.o.guicursor = ""
+local set = vim.o
 
-vim.o.nu = true
-vim.o.relativenumber = true
-vim.o.cursorline = true
+set.guicursor = ""
 
-vim.o.signcolumn = "yes"
+set.nu = true
+set.relativenumber = true
+set.cursorline = true
 
-vim.o.smartindent = true
-vim.o.autoindent = true
+set.termguicolors = true
+set.signcolumn = "yes"
 
-vim.o.shiftwidth = 4
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.expandtab = true
+set.smartindent = true
+set.autoindent = true
 
-vim.o.hlsearch = false
-vim.o.incsearch = true
+set.shiftwidth = 4
+set.tabstop = 4
+set.softtabstop = 4
+set.expandtab = true
 
-vim.o.cmdheight = 0
-vim.o.laststatus = 3
+set.hlsearch = false
+set.incsearch = true
+
+set.cmdheight = 0
+set.laststatus = 3
 
 vim.scriptencoding = "utf-8"
-vim.o.encoding = "utf-8"
+set.encoding = "utf-8"
 vim.fileencoding = "utf-8"
 
-vim.o.scrolloff = 10
+set.scrolloff = 10
 
-vim.o.splitright = true
-vim.o.splitbelow = true
-vim.o.splitkeep = "cursor"
+set.splitright = true
+set.splitbelow = true
+set.splitkeep = "cursor"
